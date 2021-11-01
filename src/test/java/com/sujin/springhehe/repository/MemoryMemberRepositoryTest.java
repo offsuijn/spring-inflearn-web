@@ -1,4 +1,4 @@
-package com.sujin.springhehe;
+package com.sujin.springhehe.repository;
 
 import com.sujin.springhehe.domain.Member;
 import com.sujin.springhehe.repository.MemoryMemberRepository;
