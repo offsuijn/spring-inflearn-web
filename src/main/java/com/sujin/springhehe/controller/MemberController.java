@@ -3,8 +3,10 @@ package com.sujin.springhehe.controller;
 import com.sujin.springhehe.domain.Member;
 import com.sujin.springhehe.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 
+@Controller
 public class MemberController {
 
     private final MemberService memberService;

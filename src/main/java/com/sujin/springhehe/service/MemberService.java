@@ -2,13 +2,13 @@ package com.sujin.springhehe.service;
 
 import com.sujin.springhehe.domain.Member;
 import com.sujin.springhehe.repository.MemberRepository;
-import com.sujin.springhehe.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
