@@ -1,6 +1,7 @@
 package com.sujin.springhehe;
 
 import com.sujin.springhehe.repository.JdbcMemberRepository;
+import com.sujin.springhehe.repository.JdbcTemplateMemberRepository;
 import com.sujin.springhehe.repository.MemberRepository;
 import com.sujin.springhehe.repository.MemoryMemberRepository;
 import com.sujin.springhehe.service.MemberService;
@@ -24,6 +25,7 @@ public class SpringConfig {
 
     @Bean MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
